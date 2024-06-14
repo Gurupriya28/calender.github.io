@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #069ca7 , #0f0247);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time:hover {
+    transform: scale(1.05);
+}
+
+.calender {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 250px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calender:hover {
+    transform: scale(1.05);
+}
+
+.left, .right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.right {
+    width: 42%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left {
+    width: 58%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#date {
+    font-size: 80px;
+    line-height: 90px;
+}
+
+#currentTime {
+    font-size: 30px;
+    line-height: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
